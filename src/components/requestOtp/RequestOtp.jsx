@@ -35,7 +35,7 @@ export default function Login({ setOpenEnterOtp ,setOpenRequest,setOpenLogin }) 
                 </div>
                 <button onClick={()=>setOpenEnterOtp(true)} type="text" className={styles.submit}>Request OTP</button>
                 <span>Or</span>
-                <div className={styles.formBottom}>
+                <div onClick={() => setOpenRequest(false)} className={styles.formBottom}>
                     <img src={mobile} alt="" />
                     <span>Login with Email</span>
 

@@ -29,7 +29,32 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  position: relative;
   margin-top: 83px;
+}
+.locationDrop{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  padding: 20px 10px 10px ;
+  text-align: left;
+  gap:8px;
+  left: 0;
+  top:60px;
+  border-radius: 20px;
+  width: 220px;
+  cursor: pointer;
+}
+.locationDrop>span{
+   border-radius: 5px;
+   padding: 5px 0 5px 50px;
+}
+.locationDrop>span:hover{
+background-color: lightgray;
 }
 .barWrap {
   display: flex;
@@ -141,6 +166,9 @@
   }
   .left {
     flex: 1;
+  }
+  .locationDrop{
+    width:95%;
   }
   .search{
     margin-top:45px ;

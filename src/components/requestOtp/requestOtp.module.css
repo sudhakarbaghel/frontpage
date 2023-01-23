@@ -32,7 +32,8 @@
     margin-top: 60px;
     display: flex;
   flex-direction: column;
-  gap:30px
+  gap:50px
+
 }
  
  .inputcontainer {
@@ -47,12 +48,7 @@
 
 
 }
-
-.ic2 {
-  /* margin-top: 30px; */
-  position: relative;
-}
-
+ 
 .input {
   background-color: #fafafa;
   border-top-left-radius: 12px;
@@ -139,6 +135,7 @@ input:-webkit-autofill:active{
    font-weight: 500;
    font-size: 14px;
    color: #2a47aa;
+   cursor: pointer;
 }
 .bottom{
     display: flex;
@@ -154,7 +151,7 @@ flex-wrap: wrap;
 }
 @media (max-width: 700px) {
     .form{
-        gap:18px
+        gap:30px
     }
     .inputcontainer{
         height: 50px;
