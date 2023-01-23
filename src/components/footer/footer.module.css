@@ -132,7 +132,7 @@
   border: none;
  }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .right {
     flex: 1;
     display: flex;
