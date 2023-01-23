@@ -1,0 +1,148 @@
+.header {
+  padding: 83px 26px 80px;
+  background-color: #2a47aa;
+  color: #94a2d4;
+  text-align: center;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  /* height: 500px; */
+  
+  padding-bottom: 300px;
+  align-items: center;
+}
+.header > span {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.heading{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap:15px
+}
+.search {
+  width: min(774px, 85vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 83px;
+}
+.barWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  align-self: stretch;
+  border-radius: 28px;
+}
+
+.center > input {
+  outline: none;
+  border: none;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+}
+.left > input {
+  outline: none;
+  border: none;
+  border-radius: 28px;
+  font-weight: 600;
+  /* height: 100%; */
+}
+
+.left {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 28px;
+  height: 50px;
+  padding-left: 10px;
+  gap: 15px;
+}
+.center {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  border-radius: 28px;
+  padding-left: 10px;
+  gap: 15px;
+}
+
+.headerBorder {
+  font-family: "Nunito", sans-serif;
+  color: #d3d3d3;
+  /* font-size: 3px; */
+}
+.right {
+  height: 50px;
+  background-color: white;
+  border-radius: 28px;
+  display: flex;
+  flex: 0.5;
+  
+}
+.right > button {
+  min-width: 110px;
+  width: 100%;
+  background-color: #58bcf8;
+  border-radius: 28px;
+  padding: 0px 30px;
+  cursor: pointer;
+  border: none;
+  margin: 3px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.popularSearch {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.popularTags {
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 3px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .headerBorder {
+    display: none;
+  }
+  .header{
+  padding:60px 0 170px 0;
+  }
+  .barWrap {
+    height: 168px;
+    flex-direction: column;
+    background-color: inherit;
+    gap: 20px;
+    width: auto;
+  }
+  .right {
+    flex: 1;
+  }
+  .left {
+    flex: 1;
+  }
+  .search{
+    margin-top:45px ;
+  }
+}

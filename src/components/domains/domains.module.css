@@ -1,0 +1,64 @@
+.domain{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:70px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+.heading{
+font-size: 24px;
+font-weight: 700;
+
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.rule{
+   width: 45%;
+    background-color: #2a47aa;
+    height: 2.5px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.iconContainer{
+    max-width: 952px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+.iconWrap{
+    display: flex;
+       flex: 1 0 25%;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+ 
+.iconWrap>span{
+font-weight: 600;
+text-align: center;
+}
+@media (max-width: 700px) {
+    .domain{
+        padding-left: 28px;
+        padding-right: 28px;
+        margin-top: 40px;
+    }
+    .iconWrap{
+        flex: 1 0 50%;
+        font-size: .8rem;
+    }
+    .heading{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,22 @@
+.topbar{
+    
+    border-top: 1px solid #3b5099 ;
+    border-bottom: 1px solid #3e59b2;
+    background-color: #2a47aa;
+    color: #94a3d4;
+    padding: 10px 56px;
+    display: flex;
+    justify-content: space-between;
+   gap:20px;
+   text-align: center;
+   
+}
+ 
+.topbar::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 950px){
+    .topbar{
+        display: none;
+    }
+}

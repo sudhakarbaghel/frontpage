@@ -1,0 +1,71 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 72px;
+    margin-left: 56px;
+    margin-right: 56px;
+    position: relative;
+    
+}
+.cards>span{
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-start;
+    color:black;
+    
+}
+.cardWrapper{
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+    gap:45px;
+    /* width: ${props => props.totalWidth}px; */
+    transition: transform 1s ease;
+    /* flex-wrap: wrap; */
+}
+.cardWrapper::-webkit-scrollbar {
+  display: none;
+    transition: transform 1s ease;
+
+}
+.cardWrapper>div{
+   flex:1;
+   min-width:315px;
+    transition: transform 1s ease;
+
+
+
+}
+ 
+.btnOne{
+    position:absolute;
+    top: 38.5%;
+    z-index: 999;
+    left: -56px;
+}
+.btnTwo{
+     position:absolute;
+     top: 38.5%;
+    z-index: 999;
+    right: -56px;
+
+}
+@media (max-width: 700px) {
+    .cards{
+     margin-left: 28px;
+        margin-right: 28px;
+        margin-top: 32px;
+
+    }
+  
+    .cardWrapper>div{
+   flex:1;
+min-width:260px;
+   
+
+}
+.cards>span{
+    font-size: 1.05rem;
+}
+}

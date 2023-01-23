@@ -1,0 +1,137 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding-bottom: 12px;
+  border-radius: 10px;
+
+}
+.card > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imageWrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.imageWrapper > div {
+  position: relative;
+}
+.imageWrapper > span {
+  font-weight: 600;
+}
+.dot {
+  position: absolute;
+  left: 23px;
+}
+.tags {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:7px;
+}
+.tags>span{
+    color: #858585;
+    background-color: #fafafa;
+    border-radius: 16px;
+    padding:4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+padding-left: 10px;
+  padding-right: 10px;
+  gap:15px;
+}
+.bottomFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.bottomFirst>div{
+    display: flex;
+
+}
+.firstDiv{
+font-size: 12px;
+font-weight: 500;
+gap:5px;
+display: flex;
+flex-wrap: wrap;
+flex: 1;
+}
+.secDiv{
+background-color: #ecfbeb;
+color: #1c6758;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    font-weight: 500;
+    gap:6px;
+flex: 1;
+}
+.secDiv>img{
+    columns:#1c6758 ;
+}
+.bottomSec{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.bottomSec>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.light{
+    color: #858585;
+    font-size: 12px;
+    font-weight: 500;
+}
+ 
+.money{
+    font-size: 12px;
+    
+}
+.iconFirst .iconSec{
+font-weight: 500;
+}
+.bold{
+    font-weight: 600;
+}
+.iconFirst{
+    position: relative;
+    left: 3px;
+}
+.iconSec{
+    position: relative;
+    right: 4px;
+}
+.rule{
+    margin:0 -10px;
+    
+   background-color:#fdfcfc ;
+    height: 2.5px;
+    border: none;
+}
+@media (max-width: 700px){
+.imageWrapper>span{
+  font-size: .9rem;
+}
+}
+ 
