@@ -41,7 +41,7 @@ export default function Login({ setOpenEnterOtp, setOpenRequest, setOpenLogin })
                 <div className={styles.inputWrap}>
                     {[...Array(4)].map((_, i) => (
                         <input key={i} onKeyDown={(e) => handleKeyDown(e, i)} pattern="[0-9]*" className={styles.input} onChange={(e) => handleOTP(e, i)}
-                                tabIndex={i + 1} type="number" maxLength={1} />
+                            tabIndex={i + 1} type="number" max="9"  />
                     ))}
                 </div>
                 <div className={styles.resend}><span className={styles.light}>Resend in</span>
