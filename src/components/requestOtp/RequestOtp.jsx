@@ -21,7 +21,7 @@ export default function Login({ setOpenEnterOtp ,setOpenRequest,setOpenLogin }) 
             </div>
             <div className={styles.form}>
                 <div className={`${styles.inputcontainer} ${styles.ic1}`}>
-                    <input onChange={(e) => setUsername(e.target.value)} autoComplete="off" value={username}  className={styles.input} type="text" placeholder=" " />
+                    <input pattern="[0-9]*" type="number" max="9" onChange={(e) => setUsername(e.target.value)} autoComplete="off" value={username}  className={styles.input}   placeholder=" " />
 
                     <label  className={styles.placeholder}>Mobile Number</label>
                 </div>

@@ -7,18 +7,24 @@ import { useState } from "react";
 
 export default function Login({ setOpenEnterOtp, setOpenRequest, setOpenLogin }) {
 
-    const [otp, setOTP] = useState("");
-
-    function handleOTP(e, index) {
-        setOTP(otp.slice(0, index) + e.target.value + otp.slice(index + 1));
+ 
+    
+    const [otp, setOTP] = useState(['', '', '', '']);
+ 
+    const handleChange = (e, index) => {
+        let newOTP = [...otp];
         if (e.target.value.length === 1) {
-            e.target.nextSibling.focus();
+            newOTP[index] = e.target.value;
+            if (index !== 3) {
+                document.getElementById(`otp-${index + 1}`).focus();
+            }
+        } else if (e.target.value.length === 0) {
+            newOTP[index] = '';
+            if (index !== 0) {
+                document.getElementById(`otp-${index - 1}`).focus();
+            }
         }
-    }
-    function handleKeyDown(e, index) {
-        if (e.key === "Backspace" && e.target.value === "") {
-            e.target.previousSibling.focus();
-        }
+        setOTP(newOTP);
     }
     return (
         <div className={styles.login}>
@@ -39,9 +45,17 @@ export default function Login({ setOpenEnterOtp, setOpenRequest, setOpenLogin })
             </div>
             <div className={styles.form}>
                 <div className={styles.inputWrap}>
-                    {[...Array(4)].map((_, i) => (
-                        <input key={i} onKeyDown={(e) => handleKeyDown(e, i)} pattern="[0-9]*" className={styles.input} onChange={(e) => handleOTP(e, i)}
-                            tabIndex={i + 1} type="number" max="9"  />
+                    {otp.map((otpDigit, index) => (
+                        <input
+                            key={index}
+                            id={`otp-${index}`}
+                            type="number"
+                            pattern="[0-9]*"
+                            maxLength={1}
+                            value={otpDigit}
+                            className={styles.input}
+                            onChange={e => handleChange(e, index)}
+                        />
                     ))}
                 </div>
                 <div className={styles.resend}><span className={styles.light}>Resend in</span>
