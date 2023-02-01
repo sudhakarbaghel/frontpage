@@ -7,18 +7,18 @@
     padding-left: 56px;
     padding-right: 56px;
 }
-.heading{
+.domainHeading{
 font-size: 24px;
 font-weight: 700;
 
 }
-.wrap{
+.domainWrap{
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.rule{
+.domainRule{
    width: 45%;
     background-color: #2a47aa;
     height: 2.5px;
@@ -26,7 +26,7 @@ font-weight: 700;
     border-radius: 20px;
     margin-top: 5px;
 }
-.iconContainer{
+.domainIconContainer{
     max-width: 952px;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ font-weight: 700;
 
     
 }
-.iconWrap{
+.domainIconWrap{
     display: flex;
        flex: 1 0 25%;
     flex-direction: column;
@@ -44,7 +44,7 @@ font-weight: 700;
     cursor: pointer;
 }
  
-.iconWrap>span{
+.domainIconWrap>span{
 font-weight: 600;
 text-align: center;
 }
@@ -54,11 +54,11 @@ text-align: center;
         padding-right: 28px;
         margin-top: 40px;
     }
-    .iconWrap{
+    .domainIconWrap{
         flex: 1 0 50%;
         font-size: .8rem;
     }
-    .heading{
+    .domainHeading{
         font-size: 1.2rem;
     }
 }
