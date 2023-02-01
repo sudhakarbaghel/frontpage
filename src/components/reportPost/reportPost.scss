@@ -1,0 +1,64 @@
+.reportPostRadio:checked {
+  accent-color: #2a47aa;
+}
+.reportPostRadio {
+  cursor: pointer;
+}
+
+.reportPost {
+  background-color: white;
+  padding: 15px;
+width: 400px;
+  .reportPostTop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #858585;
+    padding-bottom: 25px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+  }
+}
+.reportPostTop > span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #858585;
+}
+.reportPost > form {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      color: #4f4f4f;
+    }
+  }
+  button{
+    margin-top: 15px;
+    align-self: flex-end;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    background-color: #2a47aa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:8px;
+  }
+}

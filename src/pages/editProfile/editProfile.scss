@@ -1,0 +1,28 @@
+.editProfile {
+  display: flex;
+  justify-content: center;
+  background-color:#f2f2f2 ;
+  padding-top: 30px;
+   
+  .editProfileContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 18px;
+   
+     .editProfileLeftBar {
+    flex: 1;
+    
+    }
+    .editProfileCenter {
+      flex: 2.5;
+      align-self: flex-start;
+      
+     
+    }
+    .editProfileRightBar {
+      flex: 1.5;
+  height: 100vh;
+    }
+  }
+}

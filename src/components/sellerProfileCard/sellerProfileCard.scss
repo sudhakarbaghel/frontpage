@@ -1,0 +1,107 @@
+.sellerProfileCard {
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+.sellerProfileCardTop {
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    border-radius: 5px;
+    height: 210px;
+    object-fit: cover;
+  }
+}
+.sellerProfileCardCenterImgWrap {
+  width: 79px;
+  height: 79px;
+}
+.sellerProfileCardCenterImgWrap > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+.sellerProfileCardCenter {
+  margin-top: -45px;
+  padding:0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sellerProfileCardCenterBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:15px;
+}
+.sellerProfileCardStoreTitle {
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #858585;
+  }
+}
+.sellerProfileCardStoreTitle > span {
+  font-weight: 600;
+  font-size: 22px;
+}
+.sellerProfileCardButtonWrap {
+  display: flex;
+  gap: 20px;
+  button {
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 15px;
+    cursor: pointer;
+  }
+}
+.sellerProfileCardFirstBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  background-color: #f1f1f1;
+}
+.sellerProfileCardSecBtn {
+  color: white;
+  background-color: #000e8c;
+}
+.sellerProfileCardBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:10px;
+  max-width: 600px;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      color: #2a47aa;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+
+.sellerProfileCardHr{
+  margin-right:-4% ;
+  margin-left: -4%;
+  border: none;
+  height: 1px;
+  background-color: #c1c1c1;
+}

@@ -1,0 +1,27 @@
+.user {
+  display: flex;
+  justify-content: center;
+  background-color:#f2f2f2 ;
+  padding-top: 30px;
+   
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 18px;
+   
+     .leftBar {
+    flex: 1;
+    
+    }
+    .center {
+      flex: 2.5;
+      // background-color: pink;
+     
+    }
+    .rightBar {
+      flex: 1.5;
+  height: 100vh;
+    }
+  }
+}

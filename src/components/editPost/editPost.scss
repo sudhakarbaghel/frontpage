@@ -1,0 +1,87 @@
+.editPost {
+  padding: 15px;
+  background-color: white;
+}
+
+.editPostTopHeading {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.editPostTop > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #858585;
+  padding-bottom: 20px;
+}
+.editPostWrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editPostWrapperTop {
+  display: flex;
+  gap: 10px;
+  div {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        color: #58bcf8;
+      }
+    }
+  }
+}
+.editPostWrapperTop > div > span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2a47aa;
+}
+.editPostWrapper > p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.editPostImg {
+  border-radius: 5px;
+  width: 100%;
+  max-height: 300px;
+}
+.editPostImgWrapper {
+  position: relative;
+}
+.editPostImgDel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.editPostButtonWrapper {
+  align-self: flex-end;
+  gap: 20px;
+  display: flex;
+}
+.editPostButtonFirst {
+  padding: 8px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: #858585;
+  font-weight: 500;
+  font-size: 16px;
+}
+.editPostButtonSec {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a47aa;
+  cursor: pointer;
+}

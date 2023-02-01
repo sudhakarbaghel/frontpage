@@ -1,0 +1,121 @@
+.createPostCenter {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.createPostCenterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.createPostCenterItemTop {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  span {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #8f8f8f;
+  }
+}
+
+.createPostCenterItemBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  span,
+  label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.createPostCenterInputWrap {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+
+  gap: 35px;
+}
+
+.createPostCenterCall {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.createPostCenterInputcontainer {
+  height: 28px;
+  position: relative;
+  width: 100%;
+  color: black;
+}
+
+.createPostCenterInput {
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
+  outline: 0;
+  color: #2a47aa;
+  width: 100%;
+}
+
+.createPostCenterPlaceholder {
+  color: black;
+  left: 2px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 0px;
+}
+
+.createPostCenterInput:focus ~ .createPostCenterPlaceholder,
+.createPostCenterInput:not(:placeholder-shown) ~ .createPostCenterPlaceholder {
+  transform: translateY(-15px) translateX(0px) scale(0.9);
+}
+
+.createPostCenterInput:-webkit-autofill,
+.createPostCenterInput:-webkit-autofill:hover,
+.createPostCenterInput:-webkit-autofill:focus,
+.createPostCenterInput:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 60px #fafafa inset !important;
+}
+
+.createPostCenterButton {
+  align-self: flex-end;
+  display: flex;
+  gap: 15px;
+  button {
+    padding: 12px 16px;
+    font-weight: 500;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+.createPostCenterButtonFirst {
+  background-color: white;
+  color: #707070;
+}
+.createPostCenterButtonSec {
+  color: white;
+  background-color: #000e8c;
+  border-radius: 6px;
+}

@@ -29,7 +29,7 @@ export default function Login({ setOpenEnterOtp, setOpenRequest, setOpenLogin })
     return (
         <div className={styles.login}>
             <div className={styles.top}>
-                <img src={left} alt="" />
+                <img onClick={()=>setOpenEnterOtp(false)} src={left} alt="" />
                 <img onClick={() => { setOpenEnterOtp(false); setOpenRequest(false); setOpenLogin(false) }} src={cross} alt="" />
             </div>
             <div className={styles.center}>

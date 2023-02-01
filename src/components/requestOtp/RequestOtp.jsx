@@ -1,15 +1,16 @@
 import styles from "./requestOtp.module.css"
 import cross from "../../assets/cross.svg"
 import mobile from "../../assets/email.svg"
-import show from "../../assets/passShow.svg"
-import hide from "../../assets/passHide.svg"
+ import "./requestOtp.css"
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import { useState } from "react"
 
 export default function Login({ setOpenEnterOtp ,setOpenRequest,setOpenLogin }) {
     const [password, setPassword] = useState("")
     const [username, setUsername] = useState("")
     const [v, sV] = useState(false);
-
+    const [value, setValue] = useState()
     return (
         <div className={styles.login}>
             <div className={styles.top}>
@@ -20,9 +21,18 @@ export default function Login({ setOpenEnterOtp ,setOpenRequest,setOpenLogin }) 
                 <img onClick={() => { setOpenRequest(false); setOpenLogin(false) }} src={cross} alt="" />
             </div>
             <div className={styles.form}>
-                <div className={`${styles.inputcontainer} ${styles.ic1}`}>
-                    <input pattern="[0-9]*" type="number" max="9" onChange={(e) => setUsername(e.target.value)} autoComplete="off" value={username}  className={styles.input}   placeholder=" " />
-
+                <div className={`${styles.inputcontainer}  ${styles.ic1}`}>
+                    {/* <input pattern="[0-9]*" type="number" max="9" onChange={(e) => setUsername(e.target.value)} autoComplete="off" value={username}  className={styles.input}   placeholder=" " /> */}
+                   
+                    <PhoneInput
+                        
+                        value={value}
+                        international={false}
+                        onChange={setValue}
+                        defaultCountry="IN"
+                      
+                        className={`PhoneInputInput ${styles.input}`} 
+                    />
                     <label  className={styles.placeholder}>Mobile Number</label>
                 </div>
               

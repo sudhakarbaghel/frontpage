@@ -1,0 +1,141 @@
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .leftBarcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .leftBaritem {
+      border-radius: 10px;
+      padding: 8px 8px 13px 8px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      gap: 20px;
+      .leftBartop {
+        position: relative;
+      }
+      .leftBartop > div {
+        // position: absolute;
+        margin-top: -20px;
+        padding: 0px 8px;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-content: center;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+          padding-bottom: 3px;
+          .leftBardark {
+            font-weight: 600;
+            font-size: 12px;
+          }
+          .leftBarlight {
+            font-size: 10px;
+            font-weight: 500;
+            color: #9e9e9e;
+          }
+        }
+      }
+      .leftBartop > img {
+        width: 100%;
+        height: 65px;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      button {
+        align-self: center;
+        width: 93%;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+        cursor: pointer;
+        span {
+          color: #5d70d8;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .Leftbarcenter {
+      border-radius: 10px;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: white;
+
+      div {
+        padding-left: 8px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        cursor: pointer;
+        span {
+          color: #9e9e9e;
+          font-size: 14px;
+        }
+      }
+    }
+    .leftBarUpgrade:hover{
+      scale:1.05;
+      cursor: pointer;
+    }
+    .leftBarUpgrade {
+      transition: all .5s ease;
+
+      background-color: #bdc9fb;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .leftBarUpgradeFirstItem {
+        padding: 25px 15px 20px 15px;
+
+        p {
+          color: #253e94;
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          font-weight: 700;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          color: #5d70d8;
+        }
+      }
+      .leftBarUpgradeSecItem {
+        background: linear-gradient(to left, #a7aeea 60%, transparent 60%);
+        height: 56px;
+        position: relative;
+        button {
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          position: absolute;
+          top: -10px;
+          left: 17px;
+          color: #263896;
+          font-weight: 500;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
