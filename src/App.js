@@ -4,7 +4,6 @@ import Login from "../src/components/login/Login"
 import EditProfile from "./pages/editProfile/EditProfile"
 import CreatePost from "./pages/createPost/CreatePost"
 import AddServices from "./pages/addServices/AddServices"
-import RequestOtp from "../src/components/requestOtp/RequestOtp"
 import EnterOtp from "../src/components/enterOtp/EnterOtp"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SellerProfile from "./pages/sellerProfile/SellerProfile"
